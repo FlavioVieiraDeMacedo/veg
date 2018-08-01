@@ -1,0 +1,59 @@
+<h1>Titulo do app</h1>
+<!-- <p><em>Loading...</em></p> -->
+
+
+<form method="GET">
+  <div class="input-group obj_p_fundo">
+    <input type="text" id="cep" name="cep" class="form-control" placeholder="Pesquisar" ng-value='cep'>
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit" ng-click="Pesquisar(cep)">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+<hr>
+<div *ngIf="!enderecos"><p>Carregando...</p></div>
+<div class="content-fluid" *ngIf="enderecos">
+  <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://www.w3schools.com/w3images/lights.jpg" target="_blank">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+                <h5><b>Cep:</b>{{enderecos.cep}}</h5>
+                <p><b>Cidade:</b>{{enderecos.localidade}}</p>
+                <p><b>Estado:</b>{{enderecos.uf}}</p>
+                <p><b>Bairro:</b>{{enderecos.bairro}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://www.w3schools.com/w3images/lights.jpg" target="_blank">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+                <h5><b>Cep:</b></h5>
+                <p><b>Cidade:</b></p>
+                <p><b>Estado:</b></p>
+                <p><b>Bairro:</b></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://www.w3schools.com/w3images/lights.jpg" target="_blank">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+            <div class="caption">
+                <h5><b>Cep:</b></h5>
+                <p><b>Cidade:</b></p>
+                <p><b>Estado:</b></p>
+                <p><b>Bairro:</b></p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+</div> 

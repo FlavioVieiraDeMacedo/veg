@@ -1,0 +1,34 @@
+<h1>
+  correios works!
+</h1>
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!enderecos"><em>Loading...</em></p>
+
+<!-- <table class='table' *ngIf="enderecos">
+  <thead>
+    <tr>
+      <th>cep</th>
+      <th>logradouro</th>
+      <th>complemento</th>
+      <th>bairro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let endereco of enderecos">
+      <td>{{ endereco.cep }}</td>
+      <td>{{ endereco.logradouro }}</td>
+      <td>{{ endereco.complemento }}</td>
+      <td>{{ endereco.bairro }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<div *ngIf="enderecos">
+  <p>{{enderecos.cep}}</p>
+  <p>{{enderecos.logradouro}}</p>
+  <p>{{enderecos.complemento}}</p>
+  <p>{{enderecos.bairro}}</p>
+
+</div>
+
