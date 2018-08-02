@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CorreiosComponent } from './correios/correios.component';
 import { TesteDePostComponent } from './teste-de-post/teste-de-post.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
     FetchDataComponent,
     CorreiosComponent,
     TesteDePostComponent,
-    PesquisaComponent
+    PesquisaComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
@@ -35,6 +38,7 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
       { path: 'correios', component: CorreiosComponent },
       { path: 'teste_de_post', component: TesteDePostComponent },
       { path: 'pesquisa', component: PesquisaComponent },
+      { path: 'Produtos', component: ProdutosComponent },
     ])
   ],
   providers: [],

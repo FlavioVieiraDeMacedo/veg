@@ -1,4 +1,5 @@
 <div class='main-nav'>
+    <div class="imagem-fundo">
     <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse' [attr.aria-expanded]='isExpanded' (click)='toggle()'>
@@ -42,7 +43,13 @@
                         <span class='glyphicon glyphicon-th-list'></span> Pesquisar
                     </a>
                 </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/Produtos"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-th-list'></span> Produtos
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
+</div>
 </div>
