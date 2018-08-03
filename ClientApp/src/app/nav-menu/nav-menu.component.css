@@ -1,9 +1,13 @@
 .imagem-fundo {
-    background-image:url("../../Images/HD-Space-Background.jpg");
+    background-image:url("../../Images/background-menu.jpg");
     /* height: 100%; */
 }
+.para-frente{
+    z-index: 5 !important;
+}
 .main-nav .navbar{
-    background-color: rgba(36, 168, 2, 0.61) !important;
+    background-color: rgba(50, 82, 5, 0.85) !important;
+    color :#fff !important;
 }
 
 li .glyphicon {
@@ -15,7 +19,7 @@ li.link-active a,
 li.link-active a:hover,
 li.link-active a:focus {
     background-color: #00A887;
-    color: white;
+    color: white !important;
 }
 
 /* Keep the nav menu independent of scrolling and on top of other items */
@@ -26,10 +30,16 @@ li.link-active a:focus {
     right: 0;
     z-index: 1;
 }
+.navbar li a {
+    color: #fff !important;
+}
+.navbar a {
+    color: #fff !important;
+}
 
 @media (min-width: 768px) {
     .imagem-fundo {
-        background-image:url("../../Images/HD-Space-Background.jpg");
+        background-image:url("../../Images/background-menu.jpg");
         height: 100%;
     }
 
@@ -61,6 +71,7 @@ li.link-active a:focus {
     .navbar li a {
         padding: 10px 16px;
         border-radius: 4px;
+        color: #fff !important;
     }
     .navbar a {
         /* If a menu item's text is too long, truncate it */
@@ -68,5 +79,6 @@ li.link-active a:focus {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: #fff !important;
     }
 }
